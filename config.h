@@ -7,10 +7,12 @@ static const int WIN_HEIGHT = 600;
 /* colors and font can be overwritten via X resource properties.
  * See nsxiv(1), X(7) section Resources and xrdb(1) for more information.
  *                                      X resource            value (NULL == default) */
+
+
 // static const char *WIN_BG[]   = { "Nsxiv.window.background",   "black" };
 // static const char *WIN_FG[]   = { "Nsxiv.window.foreground",   "white" };
 // static const char *MARK_FG[]  = { "Nsxiv.mark.foreground",      NULL };
-#if HAVE_LIBFONTS
+// #if !HAVE_LIBFONTS
 // static const char *BAR_BG[]   = { "Nsxiv.bar.background",       NULL };
 // static const char *BAR_FG[]   = { "Nsxiv.bar.foreground",       NULL };
 // static const char *BAR_FONT[] = { "Nsxiv.bar.font",            "monospace-8" };
@@ -23,8 +25,7 @@ static const char *MARK_FG[]  = { "Nsxiv.mark.foreground",     "#f38ba8" };
 
 static const char *BAR_BG[]   = { "Nsxiv.bar.background",      "#11111b" };
 static const char *BAR_FG[]   = { "Nsxiv.bar.foreground",      "#cdd6f4" };
-static const char *BAR_FONT[] = { "Nsxiv.bar.font",            "monospace-12" };
-#endif
+static const char *BAR_FONT[] = { "Nsxiv.bar.font",            "JetBrainsMono-11" };
 
 
 /* if true, statusbar appears on top of the window */
